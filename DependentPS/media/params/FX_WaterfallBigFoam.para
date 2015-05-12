@@ -1,0 +1,56 @@
+/*****Particle System Transformation:*****/
+ Position: -2.482389 44.77407 -2.761614
+ Rotation: 0 0 0
+ LocalScale: 1 1 1
+ LossyScale: 1 1 1
+
+/*****Particle Emitter Params:*****/
+EmitterType 0
+
+Emit 1
+Size 0.4275893 0.3609877
+Energy 3.5 4
+Emission 500 500
+WorldVelocity 0 0 0
+LocalVelocity 0 0 -3
+RndVelocity 0 0 -1
+EmitterVelocityScale 0.05
+/**Sealed Parameter**/
+TangentVelocity 0 0 0
+AngularVelocity 0
+RndAngularVelocity 0
+RndRotation 0
+SimulateInWorldspace 1
+/**Sealed Parameter**/
+OneShot 0
+/**Sealed Parameter**/
+Ellipsoid 3 0 0
+/**Sealed Parameter**/
+MinEmitterRange 0
+
+/*****Particle Animator Params:*****/
+DoesAnimateColor 1
+AnimationColors 1 1 1 0.03921569 1 1 1 1 1 1 1 1 0.5019608 0.6666667 0.8235294 0.8313726 1 1 1 1
+WorldRotationAxis 0 0 0
+LocalRotationAxis 0 0 0
+SizeGrow 0.2
+RndForce 0 -10 0
+Force 0 -14 0
+Damping 0.5
+Autodestruct 1
+
+/*****Particle Renderer Params:*****/
+CastShadows 1
+ReceiveShadows 1
+UseLightProbes 0
+LightProbeAnchor NULL
+CameraVelocityScale 0
+StretchedParticles Stretch
+LengthScale 0.2
+VelocityScale 0.3424265
+MaxParticleSize 0.1575736
+UVAnimation 1 1 1
+TextureNames FX_waterfall5.png
+/**Sealed Parameter**/
+TintColor 1 1 1 0.7647059
+ProgramName Particles/Additive

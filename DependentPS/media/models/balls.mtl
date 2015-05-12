@@ -1,0 +1,16 @@
+newmtl balls:blinn1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.82 0.11 0.18
+Tf 1.00 1.00 1.00
+map_Kd earth.jpg
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 0.06
+newmtl balls:initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.96 1.00 0.04
+Tf 1.00 1.00 1.00
+map_Kd moon.jpg
+Ni 1.00

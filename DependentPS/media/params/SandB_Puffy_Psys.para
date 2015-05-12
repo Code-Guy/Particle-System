@@ -1,0 +1,56 @@
+/*****Particle System Transformation:*****/
+ Position: 0 8.225586 0
+ Rotation: 0 0 0
+ LocalScale: 1 1 1
+ LossyScale: 1 1 1
+
+/*****Particle Emitter Params:*****/
+EmitterType 0
+
+Emit 1
+Size 3 4
+Energy 5 8
+Emission 7 10
+WorldVelocity 0 0 0
+LocalVelocity 0 0.05 0
+RndVelocity 0.25 0.05 0.25
+EmitterVelocityScale 0.05
+/**Sealed Parameter**/
+TangentVelocity 0 0 0
+AngularVelocity 0
+RndAngularVelocity 5
+RndRotation 1
+SimulateInWorldspace 1
+/**Sealed Parameter**/
+OneShot 0
+/**Sealed Parameter**/
+Ellipsoid 13 2.5 13
+/**Sealed Parameter**/
+MinEmitterRange 0
+
+/*****Particle Animator Params:*****/
+DoesAnimateColor 1
+AnimationColors 1 1 1 0 1 1 1 0.3254902 1 1 1 0.4901961 1 1 1 0.2078431 1 1 1 0
+WorldRotationAxis 0 0 0
+LocalRotationAxis 0 0 0
+SizeGrow -0.01
+RndForce 0 0 0
+Force 0 0 0
+Damping 1
+Autodestruct 0
+
+/*****Particle Renderer Params:*****/
+CastShadows 0
+ReceiveShadows 1
+UseLightProbes 0
+LightProbeAnchor NULL
+CameraVelocityScale 0
+StretchedParticles Billboard
+LengthScale 2
+VelocityScale 0
+MaxParticleSize 1
+UVAnimation 1 1 1
+TextureNames SandB.png
+/**Sealed Parameter**/
+TintColor 0 0 0 0
+ProgramName Particles/Additive (Soft)

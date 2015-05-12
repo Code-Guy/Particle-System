@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="geometry">
+      <UniqueIdentifier>{4bde5dad-487b-4531-81ec-d6ca3c1831b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ps">
+      <UniqueIdentifier>{41f6d0c1-75e4-497c-bf7a-f86d18c27c75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ps\animator">
+      <UniqueIdentifier>{ee018b63-62b4-47a0-999b-aa8c8a86f1aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ps\emitter">
+      <UniqueIdentifier>{f3403833-bf66-4afb-8c8d-f4a64200a3ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ps\renderer">
+      <UniqueIdentifier>{4429c48e-5d2f-4979-aee1-d2a3642764ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{7e20e567-70df-41c7-a7db-55d58b272108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{98eac75a-c837-43ff-abc5-b4539ed09b8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="item">
+      <UniqueIdentifier>{434c4e03-bf59-40f2-a3c2-add11cc9c4aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ps\manager">
+      <UniqueIdentifier>{4c544a37-e286-458d-85f2-4e126c55c6ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ps\object">
+      <UniqueIdentifier>{1a631266-1403-43d0-88f3-f2f361405375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boid">
+      <UniqueIdentifier>{d58e7873-e8e3-4da8-ab05-9f27f01690af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mesh.cpp">
+      <Filter>geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="model.cpp">
+      <Filter>geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="fileloader.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="particleanimator.cpp">
+      <Filter>ps\animator</Filter>
+    </ClCompile>
+    <ClCompile Include="particleemitter.cpp">
+      <Filter>ps\emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="particlerenderer.cpp">
+      <Filter>ps\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="ellipsoidparticleemitter.cpp">
+      <Filter>ps\emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="meshparticleemitter.cpp">
+      <Filter>ps\emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry.cpp">
+      <Filter>geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="skybox.cpp">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="particlesystem.cpp">
+      <Filter>ps\object</Filter>
+    </ClCompile>
+    <ClCompile Include="psmanager.cpp">
+      <Filter>ps\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="boidmanager.cpp">
+      <Filter>boid</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mesh.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="fileloader.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="mainwindow.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="particleanimator.h">
+      <Filter>ps\animator</Filter>
+    </ClInclude>
+    <ClInclude Include="particleemitter.h">
+      <Filter>ps\emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="particlerenderer.h">
+      <Filter>ps\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="ellipsoidparticleemitter.h">
+      <Filter>ps\emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="meshparticleemitter.h">
+      <Filter>ps\emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="math3d.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="light.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="skybox.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="particleparameter.h">
+      <Filter>ps\object</Filter>
+    </ClInclude>
+    <ClInclude Include="particlesystem.h">
+      <Filter>ps\object</Filter>
+    </ClInclude>
+    <ClInclude Include="psmanager.h">
+      <Filter>ps\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="boid.h">
+      <Filter>boid</Filter>
+    </ClInclude>
+    <ClInclude Include="boidmanager.h">
+      <Filter>boid</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

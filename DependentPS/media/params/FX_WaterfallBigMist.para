@@ -1,0 +1,56 @@
+/*****Particle System Transformation:*****/
+ Position: -2.524041 -1.278099 -7.268377
+ Rotation: 0 0 0
+ LocalScale: 1 1 1
+ LossyScale: 1 1 1
+
+/*****Particle Emitter Params:*****/
+EmitterType 0
+
+Emit 1
+Size 20 20
+Energy 5 5
+Emission 2 2
+WorldVelocity 0 4 0
+LocalVelocity 0 0 0
+RndVelocity 0 1 0
+EmitterVelocityScale 0.05
+/**Sealed Parameter**/
+TangentVelocity 0 0 0
+AngularVelocity 0
+RndAngularVelocity 0
+RndRotation 0
+SimulateInWorldspace 1
+/**Sealed Parameter**/
+OneShot 0
+/**Sealed Parameter**/
+Ellipsoid 3 2 1
+/**Sealed Parameter**/
+MinEmitterRange 0
+
+/*****Particle Animator Params:*****/
+DoesAnimateColor 1
+AnimationColors 0.3137255 0.4117647 0.5058824 0 0.3960784 0.5294118 0.6627451 1 1 1 1 1 1 1 1 0.7058824 1 1 1 0.03921569
+WorldRotationAxis 0 0 0
+LocalRotationAxis 0 0 0
+SizeGrow 0.2722294
+RndForce 0.5 1 2.352425
+Force 0 0 -0.3229183
+Damping 0.9
+Autodestruct 0
+
+/*****Particle Renderer Params:*****/
+CastShadows 1
+ReceiveShadows 1
+UseLightProbes 0
+LightProbeAnchor NULL
+CameraVelocityScale 0
+StretchedParticles Billboard
+LengthScale 2
+VelocityScale 0
+MaxParticleSize 5
+UVAnimation 1 1 1
+TextureNames Cloud1.png
+/**Sealed Parameter**/
+TintColor 0.4461538 0.4461538 0.4461538 0.2392157
+ProgramName Particles/Additive

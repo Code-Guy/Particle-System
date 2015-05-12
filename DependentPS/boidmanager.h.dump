@@ -1,0 +1,54 @@
+#ifndef _BOIDMANAGER_H
+#define  _BOIDMANAGER_H
+
+#include "boid.h"
+#include <vector>
+#include <map>
+
+class BoidManager
+{
+public:
+	BoidManager(int num, 
+		ork::vec3f ellipsoid, float emitterRange, 
+		ork::vec3f minVec, ork::vec3f maxVec, 
+		float minPerchTime, float maxPerchTime,
+		float latticeSize, float gridSize);
+	~BoidManager();
+
+	void Init();
+	void Logic(float dt);
+	void Render(ork::ptr<ork::FrameBuffer> fb);
+
+	void SetTexture(string fileName, ork::vec3f uvAnimation);//设置贴图
+
+private:
+	int num;//boid的数量
+	ork::vec3f ellipsoid;//boid出生范围
+	float emitterRange;//0-1
+	ork::vec3f minVec;
+	ork::vec3f maxVec;
+	float minPerchTime;
+	float maxPerchTime;
+	std::vector<Boid> boids;//boids
+	//boid模型三个规则的系数
+	float cohesionParam;
+	float separationParam;
+	float alignmentParam;
+
+	std::map< AABB, std::vector<int> > lattice;//三维网格，中心点为（0, 0, 0） 网格作为索引 里面存储boid的编号
+	float latticeSize;//网格范围
+	float gridSize;//单个网格大小
+	float gridNum;//一个方向上网格点的数目
+
+	ork::ptr< ork::Mesh<ork::vec3f, unsigned int> > mesh;
+	ork::ptr<ork::Program> program;
+	
+	ork::vec3f Cohesion(const Boid &boid, const std::vector<int> &neighbor);//聚集
+	ork::vec3f Separation(const Boid &boid, const std::vector<int> &neighbor);//分离
+	ork::vec3f Alignment(const Boid &boid, const std::vector<int> &neighbor);//对齐
+
+	void ClearLattice();//清空lattice
+	void FillLattice();//填充lattice
+};
+
+#endif //_BOIDMANAGER_H

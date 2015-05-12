@@ -1,0 +1,56 @@
+/*****Particle System Transformation:*****/
+ Position: 4 0 -34.72462
+ Rotation: 0 0 0
+ LocalScale: 0.5 0.5 0.5
+ LossyScale: 0.5 0.5 0.5
+
+/*****Particle Emitter Params:*****/
+EmitterType 0
+
+Emit 1
+Size 2 3
+Energy 0.5 0.5
+Emission 60 60
+WorldVelocity 0 0 0
+LocalVelocity 0 0 0
+RndVelocity 4 4 4
+EmitterVelocityScale 1
+/**Sealed Parameter**/
+TangentVelocity 0 0 0
+AngularVelocity 0
+RndAngularVelocity 150
+RndRotation 1
+SimulateInWorldspace 1
+/**Sealed Parameter**/
+OneShot 0
+/**Sealed Parameter**/
+Ellipsoid 0.5 0.5 0.5
+/**Sealed Parameter**/
+MinEmitterRange 0
+
+/*****Particle Animator Params:*****/
+DoesAnimateColor 1
+AnimationColors 0.9764706 0.9764706 0.9764706 0.1647059 0.7058824 0.6392157 0.6117647 0.3882353 0.8313726 0.7843137 0.6784314 0.2235294 0.427451 0.3960784 0.3686275 0.2078431 0.5607843 0.4431373 0.4431373 0.09411765
+WorldRotationAxis 0 0 0
+LocalRotationAxis 0 0 0
+SizeGrow 1
+RndForce 0 0 0
+Force 0 0 0
+Damping 0.25
+Autodestruct 1
+
+/*****Particle Renderer Params:*****/
+CastShadows 1
+ReceiveShadows 1
+UseLightProbes 0
+LightProbeAnchor NULL
+CameraVelocityScale 0
+StretchedParticles Billboard
+LengthScale 1
+VelocityScale 0
+MaxParticleSize 1
+UVAnimation 1 1 1
+TextureNames dust02.png
+/**Sealed Parameter**/
+TintColor 0.7450981 0.7450981 0.7450981 0.345098
+ProgramName Particles/Additive

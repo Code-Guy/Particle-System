@@ -1,0 +1,56 @@
+/*****Particle System Transformation:*****/
+ Position: -0.04413414 -0.009849161 -0.9617958
+ Rotation: 0 0 0
+ LocalScale: 0.3333333 0.3333333 0.3333333
+ LossyScale: 1 1 1
+
+/*****Particle Emitter Params:*****/
+EmitterType 0
+
+Emit 1
+Size 0.03 0.06
+Energy 0.1 0.3
+Emission 500 500
+WorldVelocity 0 0 0
+LocalVelocity 0 1 0
+RndVelocity 0.1 0 0.1
+EmitterVelocityScale 0.05
+/**Sealed Parameter**/
+TangentVelocity 0 0 0
+AngularVelocity 0
+RndAngularVelocity 0
+RndRotation 0
+SimulateInWorldspace 1
+/**Sealed Parameter**/
+OneShot 0
+/**Sealed Parameter**/
+Ellipsoid 10 0 10
+/**Sealed Parameter**/
+MinEmitterRange 0
+
+/*****Particle Animator Params:*****/
+DoesAnimateColor 1
+AnimationColors 1 1 1 1 1 1 1 0.6509804 1 1 1 0.6 1 1 1 0.3294118 1 1 1 0.03921569
+WorldRotationAxis 0 0 0
+LocalRotationAxis 0 0 0
+SizeGrow 0
+RndForce 0 0 0
+Force 0 0 0
+Damping 0.01
+Autodestruct 0
+
+/*****Particle Renderer Params:*****/
+CastShadows 1
+ReceiveShadows 1
+UseLightProbes 0
+LightProbeAnchor NULL
+CameraVelocityScale 0
+StretchedParticles Stretch
+LengthScale 1
+VelocityScale 0.2
+MaxParticleSize 1
+UVAnimation 1 1 1
+TextureNames Spit.png
+/**Sealed Parameter**/
+TintColor 0 0 0 0
+ProgramName Particles/Additive (Soft)

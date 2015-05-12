@@ -1,0 +1,56 @@
+/*****Particle System Transformation:*****/
+ Position: 9.625731 0.01627731 0
+ Rotation: 0 0 0
+ LocalScale: 1 1 1
+ LossyScale: 1 1 1
+
+/*****Particle Emitter Params:*****/
+EmitterType 0
+
+Emit 1
+Size 1 1.3
+Energy 3 3
+Emission 50 75
+WorldVelocity 0 0 0
+LocalVelocity 0 0 0
+RndVelocity 0 0 0
+EmitterVelocityScale 0.05
+/**Sealed Parameter**/
+TangentVelocity 0 0 1.032142
+AngularVelocity 0.08485278
+RndAngularVelocity 0.4642982
+RndRotation 1
+SimulateInWorldspace 1
+/**Sealed Parameter**/
+OneShot 0
+/**Sealed Parameter**/
+Ellipsoid 0.1 0 0.1
+/**Sealed Parameter**/
+MinEmitterRange 0
+
+/*****Particle Animator Params:*****/
+DoesAnimateColor 1
+AnimationColors 0.2627451 0.2627451 0.2627451 0 0.1607843 0.1607843 0.1607843 0.8117647 0.3882353 0.3882353 0.3882353 0.8901961 0.1607843 0.1607843 0.1607843 0.6745098 0.08627451 0.08627451 0.08627451 0
+WorldRotationAxis 0 0 0
+LocalRotationAxis 0 0 0
+SizeGrow 1.11
+RndForce 0.4324264 0 0.4941136
+Force 0 0 0
+Damping 1
+Autodestruct 0
+
+/*****Particle Renderer Params:*****/
+CastShadows 1
+ReceiveShadows 1
+UseLightProbes 0
+LightProbeAnchor NULL
+CameraVelocityScale 0
+StretchedParticles VerticalBillboard
+LengthScale 2
+VelocityScale 0
+MaxParticleSize 1
+UVAnimation 1 1 1
+TextureNames foam.png
+/**Sealed Parameter**/
+TintColor 0.5 0.5 0.5 0.5
+ProgramName Particles/Additive

@@ -1,0 +1,56 @@
+/*****Particle System Transformation:*****/
+ Position: -6.100209 6.063064 -5.051231
+ Rotation: 0 0 0
+ LocalScale: 1 1 1
+ LossyScale: 1 1 1
+
+/*****Particle Emitter Params:*****/
+EmitterType 0
+
+Emit 1
+Size 3 4
+Energy 3 3
+Emission 3 7
+WorldVelocity 0 0 5
+LocalVelocity 0 0 0
+RndVelocity 0 0 0
+EmitterVelocityScale 0
+/**Sealed Parameter**/
+TangentVelocity 0 0 0
+AngularVelocity 0
+RndAngularVelocity 500
+RndRotation 0
+SimulateInWorldspace 1
+/**Sealed Parameter**/
+OneShot 0
+/**Sealed Parameter**/
+Ellipsoid 10 5 10
+/**Sealed Parameter**/
+MinEmitterRange 0
+
+/*****Particle Animator Params:*****/
+DoesAnimateColor 1
+AnimationColors 1 1 1 0.1568628 1 1 1 1 1 1 1 1 1 1 1 0.7803922 0.09803922 0.09803922 0.09803922 0
+WorldRotationAxis 0 0 0
+LocalRotationAxis 2 1 2
+SizeGrow -0.01
+RndForce 0 0 0
+Force 0 -5 10
+Damping 0.99
+Autodestruct 0
+
+/*****Particle Renderer Params:*****/
+CastShadows 1
+ReceiveShadows 1
+UseLightProbes 0
+LightProbeAnchor NULL
+CameraVelocityScale 0
+StretchedParticles Billboard
+LengthScale 2
+VelocityScale 0
+MaxParticleSize 0.25
+UVAnimation 4 2 2
+TextureNames Bird.png
+/**Sealed Parameter**/
+TintColor 0.3647059 0.3647059 0.3647059 1
+ProgramName Particles/Alpha Blended

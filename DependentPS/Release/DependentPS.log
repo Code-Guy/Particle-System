@@ -1,0 +1,1604 @@
+﻿Build started 2015/5/12 12:59:50.
+     1>Project "C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\DependentPS.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\DependentPS.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Iork /Iork\libraries /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _USE_MATH_DEFINES /D "ORK_API=__declspec(dllimport)" /D TIXML_USE_STL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt mainwindow.cpp
+         mainwindow.cpp
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Buffer.h(149): warning C4251: “ork::Buffer::Parameters::_subImage2D”: class“ork::vec3<type>”需要有 dll 接口由 class“ork::Buffer::Parameters”的客户端使用
+                 with
+                 [
+                     type=int
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Buffer.h(151): warning C4251: “ork::Buffer::Parameters::_subImage3D”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::Buffer::Parameters”的客户端使用
+                 with
+                 [
+                     type=int
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/GPUBuffer.h(151): warning C4251: “ork::GPUBuffer::programIds”: class“std::vector<_Ty>”需要有 dll 接口由 class“ork::GPUBuffer”的客户端使用
+                 with
+                 [
+                     _Ty=GLuint
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/AttributeBuffer.h(198): warning C4251: “ork::AttributeBuffer::b”: class“ork::ptr<T>”需要有 dll 接口由 class“ork::AttributeBuffer”的客户端使用
+                 with
+                 [
+                     T=ork::Buffer
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/MeshBuffers.h(70): warning C4251: “ork::MeshBuffers::bounds”: struct“ork::box3<type>”需要有 dll 接口由 class“ork::MeshBuffers”的客户端使用
+                 with
+                 [
+                     type=float
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/MeshBuffers.h(339): warning C4251: “ork::MeshBuffers::attributeBuffers”: class“std::vector<_Ty>”需要有 dll 接口由 class“ork::MeshBuffers”的客户端使用
+                 with
+                 [
+                     _Ty=ork::ptr<ork::AttributeBuffer>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/MeshBuffers.h(345): warning C4251: “ork::MeshBuffers::indicesBuffer”: class“ork::ptr<T>”需要有 dll 接口由 class“ork::MeshBuffers”的客户端使用
+                 with
+                 [
+                     T=ork::AttributeBuffer
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Sampler.h(335): warning C4251: “ork::Sampler::INSTANCES”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“ork::Sampler”的客户端使用
+                 with
+                 [
+                     _Kty=ork::Sampler::Parameters,
+                     _Ty=std::pair<GLuint,unsigned int>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Texture.h(311): warning C4251: “ork::Texture::currentTextureUnits”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“ork::Texture”的客户端使用
+                 with
+                 [
+                     _Kty=GLuint,
+                     _Ty=GLuint
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Texture.h(316): warning C4251: “ork::Texture::programIds”: class“std::vector<_Ty>”需要有 dll 接口由 class“ork::Texture”的客户端使用
+                 with
+                 [
+                     _Ty=GLuint
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(68): warning C4251: “ork::Value::name”: class“std::basic_string<_Elem,_Traits,_Ax>”需要有 dll 接口由 class“ork::Value”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(235): warning C4251: “ork::Value2<U,T,V>::value”: class“ork::vec2<T>”需要有 dll 接口由 class“ork::Value2<U,T,V>”的客户端使用
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(236): 参见对正在编译的类 模板 实例化“ork::Value2<U,T,V>”的引用
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(336): warning C4251: “ork::Value3<U,T,V>::value”: class“ork::vec3<T>”需要有 dll 接口由 class“ork::Value3<U,T,V>”的客户端使用
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(337): 参见对正在编译的类 模板 实例化“ork::Value3<U,T,V>”的引用
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(437): warning C4251: “ork::Value4<U,T,V>::value”: class“ork::vec4<T>”需要有 dll 接口由 class“ork::Value4<U,T,V>”的客户端使用
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(438): 参见对正在编译的类 模板 实例化“ork::Value4<U,T,V>”的引用
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(824): warning C4251: “ork::ValueSampler::value”: class“ork::ptr<T>”需要有 dll 接口由 class“ork::ValueSampler”的客户端使用
+                 with
+                 [
+                     T=ork::Texture
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Module.h(231): warning C4251: “ork::Module::users”: class“std::set<_Kty>”需要有 dll 接口由 class“ork::Module”的客户端使用
+                 with
+                 [
+                     _Kty=ork::Program *
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Module.h(268): warning C4251: “ork::Module::feedbackVaryings”: class“std::vector<_Ty>”需要有 dll 接口由 class“ork::Module”的客户端使用
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Module.h(273): warning C4251: “ork::Module::initialValues”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“ork::Module”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=ork::ptr<ork::Value>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(104): warning C4251: “ork::Uniform::name”: class“std::basic_string<_Elem,_Traits,_Ax>”需要有 dll 接口由 class“ork::Uniform”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(363): warning C4251: “ork::Uniform2<U,T,R,V,W>::value”: class“ork::vec2<T>”需要有 dll 接口由 class“ork::Uniform2<U,T,R,V,W>”的客户端使用
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform2<U,T,R,V,W>”的引用
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(493): warning C4251: “ork::Uniform3<U,T,R,V,W>::value”: class“ork::vec3<T>”需要有 dll 接口由 class“ork::Uniform3<U,T,R,V,W>”的客户端使用
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(500): 参见对正在编译的类 模板 实例化“ork::Uniform3<U,T,R,V,W>”的引用
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(624): warning C4251: “ork::Uniform4<U,T,R,V,W>::value”: class“ork::vec4<T>”需要有 dll 接口由 class“ork::Uniform4<U,T,R,V,W>”的客户端使用
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(631): 参见对正在编译的类 模板 实例化“ork::Uniform4<U,T,R,V,W>”的引用
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1127): warning C4251: “ork::UniformSampler::sampler”: class“ork::ptr<T>”需要有 dll 接口由 class“ork::UniformSampler”的客户端使用
+                 with
+                 [
+                     T=ork::Sampler
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1132): warning C4251: “ork::UniformSampler::value”: class“ork::ptr<T>”需要有 dll 接口由 class“ork::UniformSampler”的客户端使用
+                 with
+                 [
+                     T=ork::Texture
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1560): warning C4251: “ork::UniformBlock::name”: class“std::basic_string<_Elem,_Traits,_Ax>”需要有 dll 接口由 class“ork::UniformBlock”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1575): warning C4251: “ork::UniformBlock::buffer”: class“ork::ptr<T>”需要有 dll 接口由 class“ork::UniformBlock”的客户端使用
+                 with
+                 [
+                     T=ork::GPUBuffer
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1580): warning C4251: “ork::UniformBlock::uniforms”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“ork::UniformBlock”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=ork::ptr<ork::Uniform>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1587): warning C4251: “ork::UniformBlock::buffers”: class“ork::static_ptr<T>”需要有 dll 接口由 class“ork::UniformBlock”的客户端使用
+                 with
+                 [
+                     T=ork::Factory<std::string,ork::ptr<ork::GPUBuffer>>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Program.h(454): warning C4251: “ork::Program::modules”: class“std::vector<_Ty>”需要有 dll 接口由 class“ork::Program”的客户端使用
+                 with
+                 [
+                     _Ty=ork::ptr<ork::Module>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Program.h(483): warning C4251: “ork::Program::uniforms”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“ork::Program”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=ork::ptr<ork::Uniform>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Program.h(489): warning C4251: “ork::Program::oldUniforms”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“ork::Program”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=ork::ptr<ork::Uniform>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Program.h(494): warning C4251: “ork::Program::uniformSamplers”: class“std::vector<_Ty>”需要有 dll 接口由 class“ork::Program”的客户端使用
+                 with
+                 [
+                     _Ty=ork::ptr<ork::UniformSampler>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Program.h(499): warning C4251: “ork::Program::uniformBlocks”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“ork::Program”的客户端使用
+                 with
+                 [
+                     _Kty=std::string,
+                     _Ty=ork::ptr<ork::UniformBlock>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/TextureBuffer.h(81): warning C4251: “ork::TextureBuffer::b”: class“ork::ptr<T>”需要有 dll 接口由 class“ork::TextureBuffer”的客户端使用
+                 with
+                 [
+                     T=ork::GPUBuffer
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/TransformFeedback.h(183): warning C4251: “ork::TransformFeedback::DEFAULT”: class“ork::static_ptr<T>”需要有 dll 接口由 class“ork::TransformFeedback”的客户端使用
+                 with
+                 [
+                     T=ork::TransformFeedback
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/TransformFeedback.h(188): warning C4251: “ork::TransformFeedback::TRANSFORM”: class“ork::ptr<T>”需要有 dll 接口由 class“ork::TransformFeedback”的客户端使用
+                 with
+                 [
+                     T=ork::Program
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/FrameBuffer.h(88): warning C4251: “ork::FrameBuffer::Parameters::viewport”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::FrameBuffer::Parameters”的客户端使用
+                 with
+                 [
+                     type=int
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/FrameBuffer.h(94): warning C4251: “ork::FrameBuffer::Parameters::depthRange”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::FrameBuffer::Parameters”的客户端使用
+                 with
+                 [
+                     type=float
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/FrameBuffer.h(113): warning C4251: “ork::FrameBuffer::Parameters::clearColor”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::FrameBuffer::Parameters”的客户端使用
+                 with
+                 [
+                     type=float
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/FrameBuffer.h(198): warning C4251: “ork::FrameBuffer::Parameters::polygonOffset”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::FrameBuffer::Parameters”的客户端使用
+                 with
+                 [
+                     type=float
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/FrameBuffer.h(205): warning C4251: “ork::FrameBuffer::Parameters::polygonOffsets”: class“ork::vec3<type>”需要有 dll 接口由 class“ork::FrameBuffer::Parameters”的客户端使用
+                 with
+                 [
+                     type=bool
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/FrameBuffer.h(275): warning C4251: “ork::FrameBuffer::Parameters::occlusionQuery”: class“ork::ptr<T>”需要有 dll 接口由 class“ork::FrameBuffer::Parameters”的客户端使用
+                 with
+                 [
+                     T=ork::Query
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/FrameBuffer.h(294): warning C4251: “ork::FrameBuffer::Parameters::scissor”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::FrameBuffer::Parameters”的客户端使用
+                 with
+                 [
+                     type=int
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/FrameBuffer.h(437): warning C4251: “ork::FrameBuffer::Parameters::color”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::FrameBuffer::Parameters”的客户端使用
+                 with
+                 [
+                     type=float
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/FrameBuffer.h(481): warning C4251: “ork::FrameBuffer::Parameters::colorMask”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::FrameBuffer::Parameters”的客户端使用
+                 with
+                 [
+                     type=bool
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/FrameBuffer.h(1468): warning C4251: “ork::FrameBuffer::textures”: class“ork::ptr<T>”需要有 dll 接口由 class“ork::FrameBuffer”的客户端使用
+                 with
+                 [
+                     T=ork::Object
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/FrameBuffer.h(1520): warning C4251: “ork::FrameBuffer::DEFAULT”: class“ork::static_ptr<T>”需要有 dll 接口由 class“ork::FrameBuffer”的客户端使用
+                 with
+                 [
+                     T=ork::FrameBuffer::FrameBufferMap
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/FrameBuffer.h(1535): warning C4251: “ork::FrameBuffer::QUAD”: class“ork::static_ptr<T>”需要有 dll 接口由 class“ork::FrameBuffer”的客户端使用
+                 with
+                 [
+                     T=ork::Mesh<ork::vec4f,unsigned int>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/ui/Window.h(156): warning C4251: “ork::Window::Parameters::_name”: class“std::basic_string<_Elem,_Traits,_Ax>”需要有 dll 接口由 class“ork::Window::Parameters”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/ui/GlutWindow.h(72): warning C4251: “ork::GlutWindow::INSTANCES”: class“std::map<_Kty,_Ty>”需要有 dll 接口由 class“ork::GlutWindow”的客户端使用
+                 with
+                 [
+                     _Kty=int,
+                     _Ty=ork::GlutWindow *
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/ui/GlutWindow.h(82): warning C4251: “ork::GlutWindow::size”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::GlutWindow”的客户端使用
+                 with
+                 [
+                     type=int
+                 ]
+     1>c:\users\berryrobot\documents\visual studio 2010\projects\dependentps\dependentps\fileloader.h(15): warning C4482: 使用了非标准扩展: 限定名中使用了枚举“ork::TextureFilter”
+     1>c:\users\berryrobot\documents\visual studio 2010\projects\dependentps\dependentps\fileloader.h(15): warning C4482: 使用了非标准扩展: 限定名中使用了枚举“ork::TextureFilter”
+     1>c:\users\berryrobot\documents\visual studio 2010\projects\dependentps\dependentps\fileloader.h(15): warning C4482: 使用了非标准扩展: 限定名中使用了枚举“ork::TextureWrap”
+     1>c:\users\berryrobot\documents\visual studio 2010\projects\dependentps\dependentps\fileloader.h(15): warning C4482: 使用了非标准扩展: 限定名中使用了枚举“ork::TextureWrap”
+     1>mainwindow.cpp(59): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>mainwindow.cpp(60): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>mainwindow.cpp(213): warning C4305: “参数”: 从“double”到“float”截断
+     1>mainwindow.cpp(213): warning C4305: “参数”: 从“double”到“float”截断
+     1>mainwindow.cpp(213): warning C4305: “参数”: 从“double”到“float”截断
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(363): warning C4251: “ork::Uniform2<U,T,R,V,W>::value”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::Uniform2<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC2F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform2f,
+                     W=& ork::value2f
+                 ]
+                 and
+                 [
+                     type=float
+                 ]
+                 and
+                 [
+                     U=VEC2F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform2f,
+                     W=& ork::value2f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform2<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC2F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform2f,
+                     W=& ork::value2f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform2f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1660): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform2f
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(363): warning C4251: “ork::Uniform2<U,T,R,V,W>::value”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::Uniform2<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC2B,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform2d,
+                     W=& ork::value2d
+                 ]
+                 and
+                 [
+                     type=double
+                 ]
+                 and
+                 [
+                     U=VEC2B,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform2d,
+                     W=& ork::value2d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform2<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC2B,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform2d,
+                     W=& ork::value2d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform2d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1665): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform2d
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(363): warning C4251: “ork::Uniform2<U,T,R,V,W>::value”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::Uniform2<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC2I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform2i,
+                     W=& ork::value2i
+                 ]
+                 and
+                 [
+                     type=int
+                 ]
+                 and
+                 [
+                     U=VEC2I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform2i,
+                     W=& ork::value2i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform2<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC2I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform2i,
+                     W=& ork::value2i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform2i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1670): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform2i
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(363): warning C4251: “ork::Uniform2<U,T,R,V,W>::value”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::Uniform2<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC2UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform2ui,
+                     W=& ork::value2ui
+                 ]
+                 and
+                 [
+                     type=GLuint
+                 ]
+                 and
+                 [
+                     U=VEC2UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform2ui,
+                     W=& ork::value2ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform2<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC2UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform2ui,
+                     W=& ork::value2ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform2ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1675): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform2ui
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(363): warning C4251: “ork::Uniform2<U,T,R,V,W>::value”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::Uniform2<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC2B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform2b,
+                     W=& ork::value2b
+                 ]
+                 and
+                 [
+                     type=bool
+                 ]
+                 and
+                 [
+                     U=VEC2B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform2b,
+                     W=& ork::value2b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform2<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC2B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform2b,
+                     W=& ork::value2b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform2b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1680): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform2b
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(493): warning C4251: “ork::Uniform3<U,T,R,V,W>::value”: class“ork::vec3<type>”需要有 dll 接口由 class“ork::Uniform3<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC3F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform3f,
+                     W=& ork::value3f
+                 ]
+                 and
+                 [
+                     type=float
+                 ]
+                 and
+                 [
+                     U=VEC3F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform3f,
+                     W=& ork::value3f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform3<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC3F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform3f,
+                     W=& ork::value3f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform3f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1685): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform3f
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(493): warning C4251: “ork::Uniform3<U,T,R,V,W>::value”: class“ork::vec3<type>”需要有 dll 接口由 class“ork::Uniform3<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC3D,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform3d,
+                     W=& ork::value3d
+                 ]
+                 and
+                 [
+                     type=double
+                 ]
+                 and
+                 [
+                     U=VEC3D,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform3d,
+                     W=& ork::value3d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform3<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC3D,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform3d,
+                     W=& ork::value3d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform3d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1690): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform3d
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(493): warning C4251: “ork::Uniform3<U,T,R,V,W>::value”: class“ork::vec3<type>”需要有 dll 接口由 class“ork::Uniform3<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC3I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform3i,
+                     W=& ork::value3i
+                 ]
+                 and
+                 [
+                     type=int
+                 ]
+                 and
+                 [
+                     U=VEC3I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform3i,
+                     W=& ork::value3i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform3<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC3I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform3i,
+                     W=& ork::value3i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform3i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1695): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform3i
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(493): warning C4251: “ork::Uniform3<U,T,R,V,W>::value”: class“ork::vec3<type>”需要有 dll 接口由 class“ork::Uniform3<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC3UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform3ui,
+                     W=& ork::value3ui
+                 ]
+                 and
+                 [
+                     type=GLuint
+                 ]
+                 and
+                 [
+                     U=VEC3UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform3ui,
+                     W=& ork::value3ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform3<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC3UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform3ui,
+                     W=& ork::value3ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform3ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1700): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform3ui
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(493): warning C4251: “ork::Uniform3<U,T,R,V,W>::value”: class“ork::vec3<type>”需要有 dll 接口由 class“ork::Uniform3<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC3B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform3b,
+                     W=& ork::value3b
+                 ]
+                 and
+                 [
+                     type=bool
+                 ]
+                 and
+                 [
+                     U=VEC3B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform3b,
+                     W=& ork::value3b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform3<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC3B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform3b,
+                     W=& ork::value3b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform3b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1705): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform3b
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(624): warning C4251: “ork::Uniform4<U,T,R,V,W>::value”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::Uniform4<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC4F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform4f,
+                     W=& ork::value4f
+                 ]
+                 and
+                 [
+                     type=float
+                 ]
+                 and
+                 [
+                     U=VEC4F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform4f,
+                     W=& ork::value4f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform4<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC4F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform4f,
+                     W=& ork::value4f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform4f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1710): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform4f
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(624): warning C4251: “ork::Uniform4<U,T,R,V,W>::value”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::Uniform4<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC4D,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform4d,
+                     W=& ork::value4d
+                 ]
+                 and
+                 [
+                     type=double
+                 ]
+                 and
+                 [
+                     U=VEC4D,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform4d,
+                     W=& ork::value4d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform4<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC4D,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform4d,
+                     W=& ork::value4d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform4d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1715): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform4d
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(624): warning C4251: “ork::Uniform4<U,T,R,V,W>::value”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::Uniform4<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC4I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform4i,
+                     W=& ork::value4i
+                 ]
+                 and
+                 [
+                     type=int
+                 ]
+                 and
+                 [
+                     U=VEC4I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform4i,
+                     W=& ork::value4i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform4<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC4I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform4i,
+                     W=& ork::value4i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform4i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1720): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform4i
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(624): warning C4251: “ork::Uniform4<U,T,R,V,W>::value”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::Uniform4<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC4UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform4ui,
+                     W=& ork::value4ui
+                 ]
+                 and
+                 [
+                     type=GLuint
+                 ]
+                 and
+                 [
+                     U=VEC4UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform4ui,
+                     W=& ork::value4ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform4<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC4UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform4ui,
+                     W=& ork::value4ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform4ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1725): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform4ui
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(624): warning C4251: “ork::Uniform4<U,T,R,V,W>::value”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::Uniform4<U,T,R,V,W>”的客户端使用
+                 with
+                 [
+                     U=VEC4B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform4b,
+                     W=& ork::value4b
+                 ]
+                 and
+                 [
+                     type=bool
+                 ]
+                 and
+                 [
+                     U=VEC4B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform4b,
+                     W=& ork::value4b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform4<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC4B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform4b,
+                     W=& ork::value4b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform4b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(1730): 参见对正在编译的类 模板 实例化“ork::ptr<T>”的引用
+                 with
+                 [
+                     T=ork::Uniform4b
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(235): warning C4251: “ork::Value2<U,T,V>::value”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::Value2<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC2F,
+                     T=GLfloat,
+                     V=& ork::value2f
+                 ]
+                 and
+                 [
+                     type=float
+                 ]
+                 and
+                 [
+                     U=VEC2F,
+                     T=GLfloat,
+                     V=& ork::value2f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(339): 参见对正在编译的类 模板 实例化“ork::Value2<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC2F,
+                     T=GLfloat,
+                     V=& ork::value2f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(338): 编译类 模板 成员函数“void ork::Uniform2<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC2F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform2f,
+                     W=& ork::value2f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform2<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC2F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform2f,
+                     W=& ork::value2f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform2f
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(235): warning C4251: “ork::Value2<U,T,V>::value”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::Value2<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC2B,
+                     T=GLdouble,
+                     V=& ork::value2d
+                 ]
+                 and
+                 [
+                     type=double
+                 ]
+                 and
+                 [
+                     U=VEC2B,
+                     T=GLdouble,
+                     V=& ork::value2d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(339): 参见对正在编译的类 模板 实例化“ork::Value2<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC2B,
+                     T=GLdouble,
+                     V=& ork::value2d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(338): 编译类 模板 成员函数“void ork::Uniform2<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC2B,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform2d,
+                     W=& ork::value2d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform2<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC2B,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform2d,
+                     W=& ork::value2d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform2d
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(235): warning C4251: “ork::Value2<U,T,V>::value”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::Value2<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC2I,
+                     T=GLint,
+                     V=& ork::value2i
+                 ]
+                 and
+                 [
+                     type=int
+                 ]
+                 and
+                 [
+                     U=VEC2I,
+                     T=GLint,
+                     V=& ork::value2i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(339): 参见对正在编译的类 模板 实例化“ork::Value2<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC2I,
+                     T=GLint,
+                     V=& ork::value2i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(338): 编译类 模板 成员函数“void ork::Uniform2<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC2I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform2i,
+                     W=& ork::value2i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform2<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC2I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform2i,
+                     W=& ork::value2i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform2i
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(235): warning C4251: “ork::Value2<U,T,V>::value”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::Value2<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC2UI,
+                     T=GLuint,
+                     V=& ork::value2ui
+                 ]
+                 and
+                 [
+                     type=GLuint
+                 ]
+                 and
+                 [
+                     U=VEC2UI,
+                     T=GLuint,
+                     V=& ork::value2ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(339): 参见对正在编译的类 模板 实例化“ork::Value2<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC2UI,
+                     T=GLuint,
+                     V=& ork::value2ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(338): 编译类 模板 成员函数“void ork::Uniform2<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC2UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform2ui,
+                     W=& ork::value2ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform2<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC2UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform2ui,
+                     W=& ork::value2ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform2ui
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(235): warning C4251: “ork::Value2<U,T,V>::value”: class“ork::vec2<type>”需要有 dll 接口由 class“ork::Value2<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC2B,
+                     T=bool,
+                     V=& ork::value2b
+                 ]
+                 and
+                 [
+                     type=bool
+                 ]
+                 and
+                 [
+                     U=VEC2B,
+                     T=bool,
+                     V=& ork::value2b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(339): 参见对正在编译的类 模板 实例化“ork::Value2<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC2B,
+                     T=bool,
+                     V=& ork::value2b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(338): 编译类 模板 成员函数“void ork::Uniform2<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC2B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform2b,
+                     W=& ork::value2b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform2<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC2B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform2b,
+                     W=& ork::value2b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform2b
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(336): warning C4251: “ork::Value3<U,T,V>::value”: class“ork::vec3<type>”需要有 dll 接口由 class“ork::Value3<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC3F,
+                     T=GLfloat,
+                     V=& ork::value3f
+                 ]
+                 and
+                 [
+                     type=float
+                 ]
+                 and
+                 [
+                     U=VEC3F,
+                     T=GLfloat,
+                     V=& ork::value3f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(469): 参见对正在编译的类 模板 实例化“ork::Value3<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC3F,
+                     T=GLfloat,
+                     V=& ork::value3f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(468): 编译类 模板 成员函数“void ork::Uniform3<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC3F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform3f,
+                     W=& ork::value3f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform3<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC3F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform3f,
+                     W=& ork::value3f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform3f
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(336): warning C4251: “ork::Value3<U,T,V>::value”: class“ork::vec3<type>”需要有 dll 接口由 class“ork::Value3<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC3D,
+                     T=GLdouble,
+                     V=& ork::value3d
+                 ]
+                 and
+                 [
+                     type=double
+                 ]
+                 and
+                 [
+                     U=VEC3D,
+                     T=GLdouble,
+                     V=& ork::value3d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(469): 参见对正在编译的类 模板 实例化“ork::Value3<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC3D,
+                     T=GLdouble,
+                     V=& ork::value3d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(468): 编译类 模板 成员函数“void ork::Uniform3<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC3D,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform3d,
+                     W=& ork::value3d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform3<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC3D,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform3d,
+                     W=& ork::value3d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform3d
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(336): warning C4251: “ork::Value3<U,T,V>::value”: class“ork::vec3<type>”需要有 dll 接口由 class“ork::Value3<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC3I,
+                     T=GLint,
+                     V=& ork::value3i
+                 ]
+                 and
+                 [
+                     type=int
+                 ]
+                 and
+                 [
+                     U=VEC3I,
+                     T=GLint,
+                     V=& ork::value3i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(469): 参见对正在编译的类 模板 实例化“ork::Value3<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC3I,
+                     T=GLint,
+                     V=& ork::value3i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(468): 编译类 模板 成员函数“void ork::Uniform3<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC3I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform3i,
+                     W=& ork::value3i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform3<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC3I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform3i,
+                     W=& ork::value3i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform3i
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(336): warning C4251: “ork::Value3<U,T,V>::value”: class“ork::vec3<type>”需要有 dll 接口由 class“ork::Value3<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC3UI,
+                     T=GLuint,
+                     V=& ork::value3ui
+                 ]
+                 and
+                 [
+                     type=GLuint
+                 ]
+                 and
+                 [
+                     U=VEC3UI,
+                     T=GLuint,
+                     V=& ork::value3ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(469): 参见对正在编译的类 模板 实例化“ork::Value3<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC3UI,
+                     T=GLuint,
+                     V=& ork::value3ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(468): 编译类 模板 成员函数“void ork::Uniform3<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC3UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform3ui,
+                     W=& ork::value3ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform3<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC3UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform3ui,
+                     W=& ork::value3ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform3ui
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(336): warning C4251: “ork::Value3<U,T,V>::value”: class“ork::vec3<type>”需要有 dll 接口由 class“ork::Value3<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC3B,
+                     T=bool,
+                     V=& ork::value3b
+                 ]
+                 and
+                 [
+                     type=bool
+                 ]
+                 and
+                 [
+                     U=VEC3B,
+                     T=bool,
+                     V=& ork::value3b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(469): 参见对正在编译的类 模板 实例化“ork::Value3<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC3B,
+                     T=bool,
+                     V=& ork::value3b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(468): 编译类 模板 成员函数“void ork::Uniform3<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC3B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform3b,
+                     W=& ork::value3b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform3<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC3B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform3b,
+                     W=& ork::value3b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform3b
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(437): warning C4251: “ork::Value4<U,T,V>::value”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::Value4<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC4F,
+                     T=GLfloat,
+                     V=& ork::value4f
+                 ]
+                 and
+                 [
+                     type=float
+                 ]
+                 and
+                 [
+                     U=VEC4F,
+                     T=GLfloat,
+                     V=& ork::value4f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(600): 参见对正在编译的类 模板 实例化“ork::Value4<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC4F,
+                     T=GLfloat,
+                     V=& ork::value4f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(599): 编译类 模板 成员函数“void ork::Uniform4<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC4F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform4f,
+                     W=& ork::value4f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform4<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC4F,
+                     T=GLfloat,
+                     R=GLfloat,
+                     V=& ork::uniform4f,
+                     W=& ork::value4f
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform4f
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(437): warning C4251: “ork::Value4<U,T,V>::value”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::Value4<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC4D,
+                     T=GLdouble,
+                     V=& ork::value4d
+                 ]
+                 and
+                 [
+                     type=double
+                 ]
+                 and
+                 [
+                     U=VEC4D,
+                     T=GLdouble,
+                     V=& ork::value4d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(600): 参见对正在编译的类 模板 实例化“ork::Value4<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC4D,
+                     T=GLdouble,
+                     V=& ork::value4d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(599): 编译类 模板 成员函数“void ork::Uniform4<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC4D,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform4d,
+                     W=& ork::value4d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform4<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC4D,
+                     T=GLdouble,
+                     R=GLdouble,
+                     V=& ork::uniform4d,
+                     W=& ork::value4d
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform4d
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(437): warning C4251: “ork::Value4<U,T,V>::value”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::Value4<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC4I,
+                     T=GLint,
+                     V=& ork::value4i
+                 ]
+                 and
+                 [
+                     type=int
+                 ]
+                 and
+                 [
+                     U=VEC4I,
+                     T=GLint,
+                     V=& ork::value4i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(600): 参见对正在编译的类 模板 实例化“ork::Value4<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC4I,
+                     T=GLint,
+                     V=& ork::value4i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(599): 编译类 模板 成员函数“void ork::Uniform4<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC4I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform4i,
+                     W=& ork::value4i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform4<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC4I,
+                     T=GLint,
+                     R=GLint,
+                     V=& ork::uniform4i,
+                     W=& ork::value4i
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform4i
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(437): warning C4251: “ork::Value4<U,T,V>::value”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::Value4<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC4UI,
+                     T=GLuint,
+                     V=& ork::value4ui
+                 ]
+                 and
+                 [
+                     type=GLuint
+                 ]
+                 and
+                 [
+                     U=VEC4UI,
+                     T=GLuint,
+                     V=& ork::value4ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(600): 参见对正在编译的类 模板 实例化“ork::Value4<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC4UI,
+                     T=GLuint,
+                     V=& ork::value4ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(599): 编译类 模板 成员函数“void ork::Uniform4<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC4UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform4ui,
+                     W=& ork::value4ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform4<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC4UI,
+                     T=GLuint,
+                     R=GLuint,
+                     V=& ork::uniform4ui,
+                     W=& ork::value4ui
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform4ui
+                 ]
+     1>C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Value.h(437): warning C4251: “ork::Value4<U,T,V>::value”: class“ork::vec4<type>”需要有 dll 接口由 class“ork::Value4<U,T,V>”的客户端使用
+                 with
+                 [
+                     U=VEC4B,
+                     T=bool,
+                     V=& ork::value4b
+                 ]
+                 and
+                 [
+                     type=bool
+                 ]
+                 and
+                 [
+                     U=VEC4B,
+                     T=bool,
+                     V=& ork::value4b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(600): 参见对正在编译的类 模板 实例化“ork::Value4<U,T,V>”的引用
+                 with
+                 [
+                     U=VEC4B,
+                     T=bool,
+                     V=& ork::value4b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/render/Uniform.h(599): 编译类 模板 成员函数“void ork::Uniform4<U,T,R,V,W>::setValue(ork::ptr<ork::Value>)”时
+                 with
+                 [
+                     U=VEC4B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform4b,
+                     W=& ork::value4b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(370): 参见对正在编译的类 模板 实例化“ork::Uniform4<U,T,R,V,W>”的引用
+                 with
+                 [
+                     U=VEC4B,
+                     T=bool,
+                     R=GLuint,
+                     V=& ork::uniform4b,
+                     W=& ork::value4b
+                 ]
+                 C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\ork\ork/core/Object.h(366): 编译类 模板 成员函数“ork::ptr<T>::~ptr(void)”时
+                 with
+                 [
+                     T=ork::Uniform4b
+                 ]
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\Release\DependentPS.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:ork\lib ork.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\DependentPS.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\Release\DependentPS.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\Release\DependentPS.lib" /MACHINE:X86 Release\boidmanager.obj
+         Release\camera.obj
+         Release\ellipsoidparticleemitter.obj
+         Release\fileloader.obj
+         Release\geometry.obj
+         Release\main.obj
+         Release\mainwindow.obj
+         Release\mesh.obj
+         Release\meshparticleemitter.obj
+         Release\model.obj
+         Release\particleanimator.obj
+         Release\particleemitter.obj
+         Release\particlerenderer.obj
+         Release\particlesystem.obj
+         Release\psmanager.obj
+         Release\skybox.obj
+         正在生成代码
+         已完成代码的生成
+         DependentPS.vcxproj -> C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\Release\DependentPS.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\Release\DependentPS.exe;#1" /manifest Release\DependentPS.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\DependentPS.unsuccessfulbuild".
+         Touching "Release\DependentPS.lastbuildstate".
+     1>Done Building Project "C:\Users\BerryRobot\Documents\Visual Studio 2010\Projects\DependentPS\DependentPS\DependentPS.vcxproj" (build target(s)).
+
+生成成功。
+
+Time Elapsed 00:00:03.36

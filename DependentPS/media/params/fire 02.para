@@ -1,0 +1,56 @@
+/*****Particle System Transformation:*****/
+ Position: 4 0 -34.72462
+ Rotation: 0 0 0
+ LocalScale: 1 1 1
+ LossyScale: 1 1 1
+
+/*****Particle Emitter Params:*****/
+EmitterType 0
+
+Emit 1
+Size 4 8
+Energy 0.8 1
+Emission 120 120
+WorldVelocity 0 0 0
+LocalVelocity 0 0 0
+RndVelocity 0 0 0
+EmitterVelocityScale 0
+/**Sealed Parameter**/
+TangentVelocity 0 0 0
+AngularVelocity 0
+RndAngularVelocity 0
+RndRotation 0
+SimulateInWorldspace 1
+/**Sealed Parameter**/
+OneShot 0
+/**Sealed Parameter**/
+Ellipsoid 1 1 1
+/**Sealed Parameter**/
+MinEmitterRange 1
+
+/*****Particle Animator Params:*****/
+DoesAnimateColor 1
+AnimationColors 0.6352941 0.6352941 0.6352941 0.07058824 0.7607843 0.7607843 0.7607843 0.5137255 0.5686275 0.5686275 0.5686275 0.5058824 0.4627451 0.4627451 0.4627451 0.3019608 0.2 0.2 0.2 0
+WorldRotationAxis 0 0 0
+LocalRotationAxis 0 0 0
+SizeGrow 0.6
+RndForce 2 4 2
+Force 0 0 36
+Damping 0.1
+Autodestruct 1
+
+/*****Particle Renderer Params:*****/
+CastShadows 1
+ReceiveShadows 1
+UseLightProbes 0
+LightProbeAnchor NULL
+CameraVelocityScale 0
+StretchedParticles Billboard
+LengthScale 3
+VelocityScale 0
+MaxParticleSize 0.25
+UVAnimation 1 1 1
+TextureNames flare00_00.png
+/**Sealed Parameter**/
+TintColor 1 1 1 0.5058824
+ProgramName Particles/Additive
