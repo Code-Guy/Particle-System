@@ -89,7 +89,15 @@ void AABB::Draw(ork::ptr< ork::Mesh<ork::vec3f, unsigned int> > mesh) const
 
 bool AABB::IsVertexIn(const vec3f &v) const
 {
-	return v.x > this->xMin && v.x < this->xMax &&
-		v.y > this->yMin && v.y < this->yMax &&
-		v.z > this->zMin && v.z < this->zMax;
+	return v.x >= this->xMin && v.x <= this->xMax &&
+		v.y >= this->yMin && v.y <= this->yMax &&
+		v.z >= this->zMin && v.z <= this->zMax;
+}
+
+bool AABB::IsAABBIn(const AABB &aabb) const
+{
+	return IsVertexIn(vec3f(xMin, yMin, zMin)) && IsVertexIn(vec3f(xMax, yMin, zMin)) &&
+		IsVertexIn(vec3f(xMin, yMax, zMin)) && IsVertexIn(vec3f(xMax, yMax, zMin)) &&
+		IsVertexIn(vec3f(xMin, yMin, zMax)) && IsVertexIn(vec3f(xMax, yMin, zMax)) &&
+		IsVertexIn(vec3f(xMin, yMax, zMax)) && IsVertexIn(vec3f(xMax, yMax, zMax));
 }

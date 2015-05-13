@@ -30,6 +30,7 @@ MainWindow::MainWindow() : GlutWindow(Window::Parameters().name("Particle System
 	fb = FrameBuffer::getDefault();
 	//4.初始化天空盒
 	skybox = new Skybox("skybox/FishermansBastion");
+
 	//5.初始化模型
 	InitModel();
 	//6.初始化粒子系统
@@ -165,13 +166,13 @@ void MainWindow::InitLight()
 	light1.pos = vec3f(0.0f, 40.0f, 0.0f);
 	light1.color = vec3f(1.0f, 1.0f, 1.0f);
 	light1.dir = vec3f(1.0f, 1.0f, 1.0f);
-	light1.power = 1.0f;
+	light1.power = 0.5f;
 	light1.lightType = PointLight;//其实是PointLight，只是SpotLight比较好做ShadowMap而已
 
 	light2.pos = vec3f(0.0f, 40.0f, -30.0f);
 	light2.color = vec3f(1.0f, 1.0f, 1.0f);
 	light2.dir = vec3f(0.5f, 2, 2);
-	light2.power = 1.5f;
+	light2.power = 0.3f;
 	light2.lightType = PointLight;//其实是PointLight，只是SpotLight比较好做ShadowMap而已
 }
 
@@ -203,14 +204,19 @@ void MainWindow::InitParticleSystem()
 void MainWindow::InitBoid()
 {
 	boidMng = new BoidManager(100, 
-		vec3f(5, 5, 5), 1,
+		vec3f(5, 5, 5), 0,
 		0.5, 1,
 		vec3f(-0.5, -0.5, -0.5), vec3f(0.5, 0.5, 0.5),
 		2, 4,
 		20, 4);
 
 	boidMng->SetTexture("bird.png", vec2i(4, 2), 10);
-	boidMng->SetParams(0.01, 0.01, 0.005);
-	boidMng->SetLimit(AABB(-10, 10, -10, 10, -10, 10), 3);
+	boidMng->SetParams(0.01, 0.01, 0, 0.02, 0.01);
+	boidMng->SetVecLimit(3);
+	boidMng->SetNeighborNum(20, 5, 10);
+	boidMng->SetTendDistance(5, 3);
+	boidMng->SetScatterTime(4);
+	boidMng->SetAvoidPerchTime(3);
+
 	boidMng->Init();
 }

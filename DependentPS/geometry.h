@@ -106,6 +106,7 @@ public:
 	AABB Translate(ork::vec3f offset) const;
 	void Draw(ork::ptr< ork::Mesh<ork::vec3f, unsigned int> > mesh) const;
 	bool IsVertexIn(const ork::vec3f &v) const;
+	bool IsAABBIn(const AABB &aabb) const;
 
 	float xMin, xMax;
 	float yMin, yMax;

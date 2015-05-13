@@ -96,66 +96,66 @@ void Model::Render(ptr<FrameBuffer> fb, vec3f translate, vec3f rotate, vec3f sca
 	this->translate = translate;
 	M = Math3D::CalcModelMatrix(translate, rotate, scale);
 
-		program->getUniform1f("Alpha")->set(alpha);
+	program->getUniform1f("Alpha")->set(alpha);
 
-		if (isGlass)
+	if (isGlass)
+	{
+		program->getUniformMatrix4f("VP")->setMatrix(camera->VP);
+		program->getUniformMatrix4f("M")->setMatrix(M);
+		program->getUniformMatrix4f("N")->setMatrix((camera->V * M).inverse().transpose());
+		program->getUniform3f("CameraPos")->set(camera->pos);
+		
+		fb->setBlend(true, BlendEquation::ADD, BlendArgument::SRC_ALPHA, BlendArgument::ONE_MINUS_SRC_ALPHA);
+		for (vector<OrkMesh>::const_iterator mIter = meshes.begin(); mIter != meshes.end(); mIter++)
 		{
-			program->getUniformMatrix4f("VP")->setMatrix(camera->VP);
-			program->getUniformMatrix4f("M")->setMatrix(M);
-			program->getUniformMatrix4f("N")->setMatrix((camera->V * M).inverse().transpose());
-			program->getUniform3f("CameraPos")->set(camera->pos);
-
-			fb->setBlend(true, BlendEquation::ADD, BlendArgument::SRC_ALPHA, BlendArgument::ONE_MINUS_SRC_ALPHA);
-			for (vector<OrkMesh>::const_iterator mIter = meshes.begin(); mIter != meshes.end(); mIter++)
-			{
-				fb->draw(program, *(mIter->mesh));
-			}
-			fb->setBlend(false);
+			fb->draw(program, *(mIter->mesh));
+		}
+		fb->setBlend(false);
+	}
+	else
+	{
+		if (isAxes)
+		{
+			program->getUniformMatrix4f("MVP")->setMatrix(camera->O * camera->axesV);
+			program->getUniformMatrix4f("V")->setMatrix(camera->axesV);
+			program->getUniformMatrix4f("M")->setMatrix(mat4f::IDENTITY);
+			program->getUniformMatrix4f("N")->setMatrix(camera->axesV.inverse().transpose());
 		}
 		else
 		{
-			if (isAxes)
+			program->getUniformMatrix4f("MVP")->setMatrix(camera->VP * M);
+			program->getUniformMatrix4f("V")->setMatrix(camera->V);
+			program->getUniformMatrix4f("M")->setMatrix(M);
+			program->getUniformMatrix4f("N")->setMatrix((camera->V * M).inverse().transpose());
+		}
+
+		for (vector<OrkMesh>::const_iterator mIter = meshes.begin(); mIter != meshes.end(); mIter++)
+		{
+			program->getUniform3f("MaterialAmbientColor")->set(mIter->material.ambientColor);
+			program->getUniform3f("MaterialSpecularColor")->set(mIter->material.specularColor);
+			program->getUniform3f("MaterialDiffuseColor")->set(mIter->material.diffuseColor);
+
+			program->getUniform1b("UseDiffuseMap")->set(mIter->diffuseTexture != NULL);
+			program->getUniform1b("UseNormalMap")->set(mIter->normalTexture != NULL);
+			program->getUniform1b("UseSpecularMap")->set(mIter->specularTexture != NULL);
+			program->getUniform1b("UseAmbientMap")->set(mIter->ambientTexture != NULL);
+
+			program->getUniformSampler("DiffuseTexture")->set(mIter->diffuseTexture);
+			program->getUniformSampler("NormalTexture")->set(mIter->normalTexture);
+			program->getUniformSampler("SpecularTexture")->set(mIter->specularTexture);
+			program->getUniformSampler("AmbientTexture")->set(mIter->ambientTexture);
+
+			if (isBlend)
 			{
-				program->getUniformMatrix4f("MVP")->setMatrix(camera->O * camera->axesV);
-				program->getUniformMatrix4f("V")->setMatrix(camera->axesV);
-				program->getUniformMatrix4f("M")->setMatrix(mat4f::IDENTITY);
-				program->getUniformMatrix4f("N")->setMatrix(camera->axesV.inverse().transpose());
+				fb->setBlend(true, BlendEquation::ADD, BlendArgument::SRC_ALPHA, BlendArgument::ONE_MINUS_SRC_ALPHA);
 			}
-			else
+			fb->draw(program, *(mIter->mesh));
+			if (isBlend)
 			{
-				program->getUniformMatrix4f("MVP")->setMatrix(camera->VP * M);
-				program->getUniformMatrix4f("V")->setMatrix(camera->V);
-				program->getUniformMatrix4f("M")->setMatrix(M);
-				program->getUniformMatrix4f("N")->setMatrix((camera->V * M).inverse().transpose());
-			}
-
-			for (vector<OrkMesh>::const_iterator mIter = meshes.begin(); mIter != meshes.end(); mIter++)
-			{
-				program->getUniform3f("MaterialAmbientColor")->set(mIter->material.ambientColor);
-				program->getUniform3f("MaterialSpecularColor")->set(mIter->material.specularColor);
-				program->getUniform3f("MaterialDiffuseColor")->set(mIter->material.diffuseColor);
-
-				program->getUniform1b("UseDiffuseMap")->set(mIter->diffuseTexture != NULL);
-				program->getUniform1b("UseNormalMap")->set(mIter->normalTexture != NULL);
-				program->getUniform1b("UseSpecularMap")->set(mIter->specularTexture != NULL);
-				program->getUniform1b("UseAmbientMap")->set(mIter->ambientTexture != NULL);
-
-				program->getUniformSampler("DiffuseTexture")->set(mIter->diffuseTexture);
-				program->getUniformSampler("NormalTexture")->set(mIter->normalTexture);
-				program->getUniformSampler("SpecularTexture")->set(mIter->specularTexture);
-				program->getUniformSampler("AmbientTexture")->set(mIter->ambientTexture);
-
-				if (isBlend)
-				{
-					fb->setBlend(true, BlendEquation::ADD, BlendArgument::SRC_ALPHA, BlendArgument::ONE_MINUS_SRC_ALPHA);
-				}
-				fb->draw(program, *(mIter->mesh));
-				if (isBlend)
-				{
-					fb->setBlend(false);
-				}
+				fb->setBlend(false);
 			}
 		}
+	}
 }
 
 void Model::CalcBoundAABB()//¼ÆËã°üÎ§ºÐ
